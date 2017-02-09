@@ -1,3 +1,129 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  color: #3BA7C0;
+}
+
+#main-container {
+  width: 1092px;
+  background: #F4F5F0;
+  overflow: auto;
+}
+
+nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  border: 3px solid #E8E9E5;
+  border-bottom: 0px;
+  background: #FFFFFF;
+}
+
+.etsy {
+  color: #F14F1D;
+  font-size: 30px;
+  margin-left: 20px;
+  font-family: 'Arsenal', sans-serif;
+  font-weight: bold;
+}
+
+#search-bar {
+  height: 30px;
+  font-size: 12px;
+  margin-left: 12px;
+  width: 300px;
+}
+
+.search-button {
+  background: #34A7C2;
+  color: white;
+  font-size: 12px;
+  padding: 15px;
+  padding-top: 8.8px;
+  padding-bottom: 7.5px;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin-left: -6px;
+}
+
+.right {
+  padding-left: 320px;
+  color: #34A7C2;
+  font-size: 12px;
+}
+
+.search-button {
+  background: white;
+  color: #34A7C2;
+  border: 2px solid #3BA7C0;
+  border-radius: 4px;
+  margin-left: 10px;
+  font-size: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+
+.heading {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 20px;
+  border: 3px solid #E8E9E5;
+  background: #FFFFFF;
+  font-size: 12px; }
+
+.heading-link {
+  color: grey;
+}
+
+a {
+  margin-left: 12px;
+  color: #34A7C2;
+}
+
+.display-results {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  font-size: 10px;
+}
+
+.whiskey-results {
+  margin-left: 110px;
+  color: #34A7C2;
+  display: inline-block;
+}
+
+.whiskey {
+  color: black;
+  display: inline-block;
+}
+
+ul {
+  padding-left: 15px;
+}
+
+.side-options {
+  width: 170px;
+  margin-left: 20px;
+  margin-right: 0px;
+  margin-top: 10px;
+  line-height: 20px;
+  border: 3px solid #E8E9E5;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.side-cats {
+  padding-left: 10px;
+}
+
+.search-results {
+  width: 892px;
+  float: right;
 }
