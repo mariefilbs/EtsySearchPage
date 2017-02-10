@@ -13,7 +13,7 @@ function pullData () {
   for (var i= 0; i < etsyData.results.length; i++){
     //console.log('hii');
 
-  var image = etsyData.results[i].Images[0].url_75x75;
+  var image = etsyData.results[i].Images[0].url_170x135;
   var price = etsyData.results[i].price;
   var storeName = etsyData.results[i].Shop.shop_name;
   var storeURL = etsyData.results[i].Shop.url;
@@ -24,8 +24,14 @@ function pullData () {
       `
       <a href="${itemURL}">
         <div class="each-result">
-          <img src="${image}" alt="itemImage"/>
-          <div class="item-name"> ${itemName}
+          <img src="${image}"/>
+          <div class="item-name">
+          <a class ="item-url" href="${itemURL}"> ${itemName} </a>
+          </div>
+
+          <div class ="shop-name-price">
+          <span class ="shop-name">${storeName}</span>
+          <span class ="price">${price}</span>
           </div>
         </div>
       </a>
