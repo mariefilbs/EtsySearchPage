@@ -25,16 +25,19 @@ function pullData () {
       <a href="${itemURL}">
         <div class="each-result">
           <img src="${image}"/>
+      </a>
           <div class="item-name">
           <a class ="item-url" href="${itemURL}"> ${itemName} </a>
           </div>
 
           <div class ="shop-name-price">
-          <span class ="shop-name">${storeName}</span>
-          <span class ="price">${price}</span>
+          <span class ="shop-name">
+          <a class ="shop-name-url" href="${storeURL}">${storeName}</a>
+          </span>
+          <span class ="price">$${price}</span>
           </div>
         </div>
-      </a>
+
       `;
 
       $(".search-results").append(HTMLresult);

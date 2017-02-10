@@ -118,22 +118,38 @@ ul {
   margin: 6px; }
 
 .item-name {
-  font-size: 70%;
+  font-size: 11px;
   color: black;
-  overflow: hidden; }
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 8px;
+  padding-bottom: 0px; }
 
 img {
   width: 100%;
   height: 160px;
-  border-radius: 6px; }
+  border-top-left-radius: 6px;
+  border-top-right-radius: 4px; }
 
-.item-url {
-  color: black; }
+a.item-url {
+  max-width: 200px;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.shop-name a {
+  text-decoration: none;
+  color: grey;
+  font-size: 65%; }
 
 .shop-name {
-  font-size: 60%; }
+  padding-left: 8px; }
 
 .price {
   font-size: 75%;
   float: right;
-  color: #91CC66; }
+  color: #91CC66;
+  padding-right: 8px;
+  padding-top: 4px; }
