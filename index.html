@@ -5,19 +5,21 @@
     <title>Etsy Search Page</title>
     <link rel= "stylesheet" href= "style.css">
     <link rel= "stylesheet" href= "normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
-  </head>
+    <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">  </head>
   <body>
     <div id = "main-container">
 
 <!-- nav section with search bar and sign in/register-->
     <nav>
       <span class = "etsy">Etsy</span>
-      <input type = "text" placeholder = "whiskey" id = "search-bar"/>
+      <input type = "text" placeholder = " whiskey" id = "search-bar"/>
       <input type = "submit" value = "Search" class = "search-button"/>
-      <span class = "right"><a href = "#">Sell on Etsy</a><span>
-      <span><a href = "#">Register</a><span>
+      <span class = "right"><a class="sell-on" href = "#">Sell on Etsy</a><span>
+      <span><a class ="register" href = "#">Register</a><span>
       <input type = "submit" value = "Sign In" class = "sign-in"/>
+      <span id="cartbox">Cart
+        <img id="cartpic" src="./assets/cart.png" alt="cart"/>
+      </span>
     </nav>
 
 <!-- section below header-->
@@ -61,8 +63,54 @@
         </ul>
      </div>
 
-  <!-- what I am pulling with jquery -->
-     <div class= "search-results"></div>
+<!-- where my jquery results are going -->
+        <div class= "search-results"></div>
+
+
+<!--section of related categories and page numbers -->
+
+    <div class ="footer">
+      <div class ="related"> </div>
+
+      <div class ="lists">
+        <ul class ="foot-list1">
+          <li>whiskey decanter</li>
+          <li>whiskey gifts</li>
+          <li>whiskey barrel</li>
+          <li>bourbon</li>
+        </ul>
+        <ul>
+          <li>jack daniels</li>
+          <li>beer</li>
+          <li>whiskey set</li>
+          <li>whiskey glass</li>
+        </ul>
+        <ul>
+          <li>boyfriend gift</li>
+          <li>alcohol</li>
+        </ul>
+        <div class="looking-for">
+          <span>Looking for shops?</span>
+          <span class ="sellers"><a href ="#"> whiskeynweddingbells</a>, <a href ="#">WHISKEYandGLITZ</a>, <a href ="#">WhiskeyandSunshine</a>, <a href ="#">See more.</a></span>
+
+        </div>
+      </div>
+
+      <div class ="buttons">
+      <button type="button" name="button">1</button>
+      <button type="button" name="button">2</button>
+      <button type="button" name="button">3</button>
+      <button type="button" name="button">4</button>
+      <button type="button" name="button">5</button>
+      <button type="button" name="button">6</button>
+      <button type="button" name="button">7</button>
+      <button type="button" name="button">8</button>
+      <button type="button" name="button">9</button>
+      <button type="button" name="button">...</button>
+    </div>
+
+    </div>
+
 
     <script src= "jquery.js"></script>
     <script src= "etsyData.js"></script>
