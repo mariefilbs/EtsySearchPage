@@ -24,6 +24,10 @@ function pullData () {
       `
       <a href="${itemURL}">
         <div class="each-result">
+        <div class="mouse-over">
+          <span><img class = "heart" src = "./assets/heart.png"><span>
+          <span><img class = "hamburger" src = "./assets/hamburger.png"><span>
+        </div>
           <img src="${image}"/>
       </a>
           <div class="item-name">

@@ -135,7 +135,8 @@ ul {
 
 .search-results {
   width: 892px;
-  float: right; }
+  float: right;
+  position: relative; }
 
 .each-result {
   width: 200px;
@@ -143,7 +144,29 @@ ul {
   float: left;
   border: 1px solid lightgrey;
   border-radius: 6px;
-  margin: 6px; }
+  margin: 6px;
+  position: relative;
+  z-index: 1; }
+
+.mouse-over {
+  position: absolute;
+  z-index: 2;
+  margin-top: 5px;
+  margin-left: 156px;
+  visibility: hidden; }
+
+.each-result:hover .mouse-over {
+  visibility: visible; }
+
+.hamburger {
+  height: 15px;
+  width: 15px;
+  z-index: 2; }
+
+.heart {
+  height: 15px;
+  width: 15px;
+  z-index: 2; }
 
 .item-name {
   font-size: 11px;
